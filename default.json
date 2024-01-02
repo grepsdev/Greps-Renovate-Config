@@ -1,0 +1,68 @@
+{
+    "extends": [
+      "config:base"
+    ],
+    "labels": [
+      "renovate"
+    ],
+    "packageRules": [
+      {
+        "updateTypes": ["minor", "patch", "digest"],
+        "matchPackagePatterns": [
+          "^org.apache.maven.plugins:maven*",
+          "^org.codehaus.mojo:findbugs*",
+          "io.swagger.core.v3:swagger*",  
+          "org.yaml:snakeyaml*",  
+          "io.rest-assured:rest*",  
+          "^github.com/aws/aws-sdk-go",
+          "^github.com/cantara/bragi*",  
+          "^github.com/cantara/gober*",  
+          "^org.slf4j:slf4j*",  
+          "^org.slf4j:jcl*",  
+          "^org.slf4j:jul*", 
+          "^com.google.cloud:google-cloud*",  
+          "^com.google.code.gson:gson*",
+          "^com.google.guava:guava*",
+          "^com.amazonaws:aws-*",
+          "^software.amazon.awssdk:ses",
+          "^software.amazon.awssdk:bom",
+          "^com.amazonaws:aws-java-sdk-dynamodb",
+          "^com.fasterxml.jackson.dataformat:jackson*",  
+          "^com.fasterxml.jackson.datatype:jackson*",  
+          "^com.fasterxml.jackson.module:jackson",  
+          "^com.fasterxml.jackson.core:jackson-*",
+          "^com.fasterxml.jackson:jackson*",
+          "^commons-io:commons-io*",  
+          "^com.google.protobuf:protobuf*",  
+          "^org.postgresql:postgresql*",  
+          "^org.springframework.security:spring-security-web",  
+          "^org.flywaydb:flyway*",  
+          "^com.slack.api:slack-api-client*",  
+          "^org.testng:testng*",  
+          "^net.whydah.sso:Whydah-*",
+          "^no.cantara.jau:configservice*",  
+          "^org.valuereporter:valuereporter*",  
+          "^no.cantara.config:property-config",
+          "^github.com/cantara/nerthus*",  
+          "^no.cantara.messi:messi-*",
+          "^no.cantara.base:Hystrix-*",   
+          "^no.cantara.base:Resilience4j-*",  
+          "^no.cantara.stingray:stingray*",
+          "^no.cantara.realestate:mappingtable*",  
+          "^no.cantara.realestate:api*",  
+          "^no.cantara.realestate:typelib*",
+          "^no.cantara.realestate:azure*",  
+          "^com.exoreaction.xorcery:grpc-jpms-shaded*",  
+          "^org.mockito:mockito*",  
+          "^org.assertj:assertj*",  
+          "^org.codehaus.mojo:findbugs-maven-plugin*",  
+          "^org.apache.maven.plugins:maven-release-plugin^*",  
+          "^org.junit.jupiter:junit*",
+          "^org.junit.jupiter:junit-jupiter*",  
+          "^com.exoreaction.xorcery:xorcery*" 
+        ],
+        "automerge": true,
+        "ignoreTests": true
+      }
+    ]
+  }
